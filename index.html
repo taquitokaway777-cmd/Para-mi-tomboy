@@ -2,10 +2,15 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>Un detalle especial 💜</title>
-  <meta name="description" content="Una sorpresa especial en negro y morado con flores amarillas y canción personalizada.">
+  <meta name="description" content="Una sorpresa especial interactiva con flores amarillas y música de fondo.">
   
+  <!-- Open Graph Meta Tags for Sharing on WhatsApp, Instagram, Facebook, etc. -->
+  <meta property="og:title" content="Un detalle especial para ti 💜">
+  <meta property="og:description" content="Una sorpresa interactiva con flores amarillas y música de fondo.">
+  <meta property="og:type" content="website">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +19,12 @@
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  <link rel="stylesheet" href="styles.css">
+  <!-- Relative stylesheet link for web servers -->
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <!-- Background Audio Element -->
-  <audio id="bgAudio" src="cancion.mp3" preload="auto" loop></audio>
+  <!-- Background Audio Element (Relative path for web deployment) -->
+  <audio id="bgAudio" src="./cancion.mp3" preload="auto" loop></audio>
 
   <!-- Dynamic Petal Canvas Overlay -->
   <canvas id="petalCanvas"></canvas>
@@ -43,7 +49,7 @@
           <span class="btn-text">Presiona aquí 💜</span>
         </div>
       </button>
-      <p class="hero-subtitle">Tengo un detalle especial para ti</p>
+      <p class="hero-subtitle">Tengo algo que quisas te guste</p>
     </div>
 
     <!-- REVEAL CONTENT SECTION (Hidden Initially) -->
@@ -73,7 +79,8 @@
              ====================================================================== -->
         <div class="text-wrapper">
           <p id="mainParagraph" class="romantic-paragraph">
-            Hoy quise darte estas flores amarillas para recordarte lo especial que eres en mi vida. Gracias por iluminar cada uno de mis días con tu sonrisa, tu ternura y tu amor. ¡Eres la persona más maravillosa del mundo! 💜✨
+           Se que no te compre flores, ni te estoy dando algo que me haya costado algo de dinero, pero te lo hago de todo corazón con el poco tiempo que tengo a la mano. Se que mereces algo mucho mejor y espero el año que viene estar mas preparado para eso, pero por ahora espero disfrutes de mi esfuerzo en esto. Te amo Chelle.
+           Desde el fondo de mi corazón: Tu femboy  
           </p>
         </div>
         <!-- ====================================================================== -->
@@ -99,6 +106,7 @@
     <p>Hecho con 💜 y mucho amor</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Relative script file link for web hosting -->
+  <script src="./script.js"></script>
 </body>
 </html>
